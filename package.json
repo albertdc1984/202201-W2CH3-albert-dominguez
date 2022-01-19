@@ -1,0 +1,20 @@
+{
+  "name": "202201-w2ch3-albert-dominguez",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertdc1984/202201-W2CH3-albert-dominguez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertdc1984/202201-W2CH3-albert-dominguez/issues"
+  },
+  "homepage": "https://github.com/albertdc1984/202201-W2CH3-albert-dominguez#readme",
+  "description": ""
+}

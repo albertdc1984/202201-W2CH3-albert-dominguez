@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="./index.js"></script>
+    </head>
+    <body class="background">
+        <header class="header">
+            <h1 class="title">
+                PASAPALABRA
+            </h1>
+            <h2 class="author">
+                By Albert DC
+            </h2>
+        </header>
+        <div class="pregunta" id="question"></div>
+        <div class="list" id="llista">
+            <table  cellpadding=10;>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th width="20%">Puntos</th>
+                        <th width="12%">Acertadas</th>
+                    </tr>
+                </thead>
+                    <tbody id="tableData"></tbody>
+                </table>
+        </div>
+        <div class= "rosco">
+        <button class="let a" onclick="letter(a)" disabled>A</button>
+        <button class="let b" onclick="letter(b)" disabled>B</button>
+        <button class="let c" onclick="letter(c)" disabled>C</button>
+        <button class="let d" onclick="letter(d)" disabled>D</button>
+        <button class="let e" onclick="letter(e)" disabled>E</button>
+        <button class="let f" onclick="letter(f)" disabled>F</button>
+        <button class="let g" onclick="letter(g)" disabled>G</button>
+        <button class="let h" onclick="letter(h)" disabled>H</button>
+        <button class="let i" onclick="letter(i)" disabled>I</button>
+        <button class="let j" onclick="letter(j)" disabled>J</button>
+        <button class="let k" onclick="letter(k)" disabled>K</button>
+        <button class="let l" onclick="letter(l)" disabled>L</button>
+        <button class="let m" onclick="letter(m)" disabled>M</button>
+        <button class="let n" onclick="letter(n)" disabled>N</button>
+        <button class="let ñ" onclick="letter(ñ)" disabled>Ñ</button>
+        <button class="let o" onclick="letter(o)" disabled>O</button>
+        <button class="let p" onclick="letter(p)" disabled>P</button>
+        <button class="let q" onclick="letter(q)" disabled>Q</button>
+        <button class="let r" onclick="letter(r)" disabled>R</button>
+        <button class="let s" onclick="letter(s)" disabled>S</button>
+        <button class="let t" onclick="letter(t)" disabled>T</button>
+        <button class="let u" onclick="letter(u)" disabled>U</button>
+        <button class="let v" onclick="letter(v)" disabled>V</button>
+        <button class="let w" onclick="letter(w)" disabled>W</button>
+        <button class="let x" onclick="letter(x)" disabled>X</button>
+        <button class="let y" onclick="letter(y)" disabled>Y</button>
+        <button class="let z" onclick="letter(z)" disabled>Z</button>
+        </div>
+        <div id="timebox">TIME</div>
+        <div id="points">SCORE</div>
+        <div class="answerbox"onKeyPress="if(event.keyCode == 13) quest()">
+        <button class="start" onclick=countdown()>START!</button>
+        <input type="text" name="answer" id="answer" size="30" autocomplete="off" placeholder="Escribe aquí tu respuesta">
+        <input type="button" class="btn ok" id= "ok" value="OK!" onclick="quest()"></button>
+        <input type="button" class="btn pas" id= "pasa" onclick="pasap()"value="Pasapalabra"></button>        
+        <button class="btn end" id= "end" onclick="quit()">END</button>
+        </div>
+        
+
+    </body>
+</html>
