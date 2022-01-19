@@ -6,28 +6,25 @@ function calculator() {
   const mul = parseFloat(num1) * parseFloat(num2);
   const div = parseFloat(num1) / parseFloat(num2);
   const calcs = [
-    sum.toFixed(3).replace(/(\.0*|(?<=(\..*))0*)$/, ""),
-    res.toFixed(3).replace(/(\.0*|(?<=(\..*))0*)$/, ""),
-    mul.toFixed(3).replace(/(\.0*|(?<=(\..*))0*)$/, ""),
-    div.toFixed(3).replace(/(\.0*|(?<=(\..*))0*)$/, ""),
+    sum.toFixed(3),
+    res.toFixed(3),
+    mul.toFixed(3),
+    div.toFixed(3),
   ];
 
   if (
-    (Number.isNaN(num1) && Number.isNaN(num2)) ||
-    (num1 === "" && num2 === "") ||
-    (num1 === null && num2 === null)
+    (typeof number1 === "string" && typeof number1 === "string") ||
+    (num1 === "" && num2 === "")
   ) {
     console.log("Introdueix, com a mínim, un número vàlid");
   } else if (
-    Number.isNaN(num1) ||
-    num1 === "" ||
-    (num1 === null && !Number.isNaN(num2))
+    typeof number1 === "string" ||
+    (num1 === undefined && !Number.isNaN(num2))
   ) {
     console.log(`L'Arrel quadrada de ${num2} és ${Math.sqrt(num2).toFixed(3)}`);
   } else if (
-    Number.isNaN(num2) ||
-    num2 === "" ||
-    (num2 === null && !Number.isNaN(num1))
+    typeof number2 === "string" ||
+    (num2 === undefined && !Number.isNaN(num1))
   ) {
     console.log(`L'Arrel quadrada de ${num1} és ${Math.sqrt(num1).toFixed(3)}`);
   } else {
