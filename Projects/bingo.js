@@ -61,6 +61,7 @@ function bingo() {
     } else {
       alert(bola);
       numbers.push(bola);
+      return bola;
     }
     if (bola !== null) {
       return bola;
