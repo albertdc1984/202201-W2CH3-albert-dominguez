@@ -1,9 +1,18 @@
 body {
   margin: 0;
+  height: 100vh;
+  background-image: url(volcano.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .list {
   list-style: none;
+  color: white;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: white;
 }
